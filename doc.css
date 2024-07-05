@@ -179,11 +179,12 @@ body {
 
 
 #colored-section {
-    background-color: #f2f2f2; /* Change this to your desired color */
+    background-color: #bdf5eb; 
+    background-size: 1200px;
 }
 
 #colored-section body {
-    background-color: #00b39b; /* Change this to your desired color for the body */
+    background-color: #00b39b; 
 }
 
 .photo-container {
@@ -223,7 +224,6 @@ body {
     max-width: 100%;
     object-fit: cover;
 }
-
 
 .titre {
     color: rgb(50, 176, 157); 
