@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color:white;
 }
@@ -22,6 +22,7 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
+    right: 200px;
 }
 
 .nav-link {
@@ -98,7 +99,6 @@ body {
 .hero-title {
     font-size: 30px;
     font-weight: 20;
-    font-family:serif;
     color:  #00b39b;
     text-align: center;
     margin-top: -180px;
@@ -135,29 +135,56 @@ body {
     margin: 0 10px;
     text-align: justify;
     font-size: 25px;
-    font-family: serif;
-
+}
+.box.box-patients {
+    background-color: #2d9eab; /* Existing color */
 }
 
+.box.box-doctors {
+    background-color: #3498db; /* New color for doctors box */
+}
+
+.box.box-clinics {
+    background-color: #e67e22; /* New color for clinics box */
+}
+
+.box:hover {
+    background-color: #1e7a8c;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.box:hover a {
+    color: #ffffff;
+}
 
 .title-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    
 }
 
 .title,
 .title2,
 .title3 {
-    background-color: #00b39b;
-    color: #ffffff;
+    font-size: 25px;
+    color: #2d9eab;
     padding: 10px 20px;
     text-align: center;
+    margin-right:500px;
+    text-align:justify;
 }
 
 
+#colored-section {
+    background-color: #f2f2f2; /* Change this to your desired color */
+}
+
+#colored-section body {
+    background-color: #00b39b; /* Change this to your desired color for the body */
+}
 
 .photo-container {
     display: flex;
@@ -186,10 +213,24 @@ body {
         text-decoration: none;
 }
 
+.photo-box {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.photo-box img {
+    max-width: 100%;
+    object-fit: cover;
+}
 
 
-
-
+.titre {
+    color: rgb(50, 176, 157); 
+    text-align: center; 
+    font-size: 50PX;
+    margin-right: 20;
+}
 
 
 
