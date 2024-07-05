@@ -4,40 +4,80 @@ body {
     color:white;
 }
 
-
-
 .main-navbar {
     position: fixed;
-    margin-top: 12px;
-    top: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 3;
-    width: 120%;
-    height: 75px;
-    background: hsla(0, 0%, 100%, .98);
+    height: 72px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
 .nav-link {
-    color: rgb(168, 162, 162);
+    color: #747474;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 30px;
     transition: color 0.3s ease;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    
 }
 
 .nav-link:hover {
-    color: #00b39b);
-
+    color: #00b39b;
 }
+
 .docp-logo {
-    width: 0.5px;
+    width: 268px;
     height: 33px;
-    transform: scale(0.07);
-    margin-left: -100px;
-    margin-top: -5px;
-    
-
+    transform: scale(0.09);
+    margin-top:-25px ;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #747474;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #00b39b;
+    background-color: #f5f5f5;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -51,8 +91,8 @@ body {
     transform: scale(0.09);
     max-width: 100%;
     height: auto;
-    margin-top: -190px;
-    margin-bottom: 20px;
+    margin-top: -100px;
+    margin-bottom: 120px;
 }
 
 .hero-title {
@@ -80,60 +120,31 @@ body {
     margin: 0 20px;
     text-align: justify;
 }
-
-
 .box-container {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 50px 0;
-    border-radius: 60px;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.box1 {
-    background-color: #2ccac4; 
+.box {
+    width: 300px;
+    padding: 20px;
+    background-color: #2d9eab;
+    border: 1px solid #ddd;
     border-radius: 10px;
+    margin: 0 10px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: serif;
+
 }
-
-.box2 {
-    background-color: #3650af; /* Box 3 background color */
-    border-radius: 10px;
-}
-
-.box3 {
-    background-color: #2e3652; 
-    border-radius: 10px;
-}
-
-.box:hover {
-    transform: translateY(-1px);
-}
-
-.img1, .img2, .img3 {
-    transform: scale(0.3); 
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.box h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #00b39b; 
-}
-
-.box p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #747474;
-}
+ .box-container2{
+    background-color: #747474;
+ }
 
 
-
-.about-us {
-    color: #00b39b;
-    font-size: 15px; 
+.about{
+        color: #00b39b;
+        font-size: 18px; 
+        text-decoration: none;
 }
