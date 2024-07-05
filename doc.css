@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #747474;
+}
+
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.docp-logo {
+    height: 40px0;
+    background-image: url(doclogo.png);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav-link {
+    color: rgb(108, 96, 96);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    color: rgb(36, 198, 149);
+
+}
+.about-us {
+    color: rgb(36, 198, 149);
+    font-size: 15px; /* Added font-size */
+}
