@@ -136,27 +136,12 @@ body {
     text-align: justify;
     font-size: 25px;
 }
-.box.box-patients {
-    background-color: #2d9eab; /* Existing color */
-}
-
-.box.box-doctors {
-    background-color: #3498db; /* New color for doctors box */
-}
-
-.box.box-clinics {
-    background-color: #e67e22; /* New color for clinics box */
-}
-
 .box:hover {
     background-color: #1e7a8c;
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
 
-.box:hover a {
-    color: #ffffff;
-}
 
 .title-container {
     flex-direction: column;
@@ -176,16 +161,31 @@ body {
     margin-right:500px;
     text-align:justify;
 }
+.brand-logo {
+    list-style: none;
 
-
-#colored-section {
-    background-color: #bdf5eb; 
-    background-size: 1200px;
 }
 
-#colored-section body {
-    background-color: #00b39b; 
+.brand-logo li {
+    font-size: 16px;
+    display: inline-block;
+    width: 168px;
+    padding-right: 5px;
 }
+
+.brand-logo li:hover svg {
+    fill: #00b39b;
+}
+
+.brand-logo li svg {
+    height: 20px;
+    width: auto;
+    max-width: 100%;
+    padding-top: 10px;
+    fill: #747474;
+}
+
+
 
 .photo-container {
     display: flex;
@@ -233,6 +233,228 @@ body {
 }
 
 
+
+
+.statis-section {
+    background-color: #e5faf8;
+    height: 600px;
+    width: 100%;
+    flex-direction: row;
+
+
+}
+
+#upstat-div {
+    margin-top: 50px;
+    width: 50%;
+    align-items: center;
+
+
+}
+
+#statis-slogan {
+    font-size: 2.2em;
+}
+
+.statis-desc {
+    text-align:start;
+    color: #1e7a8c;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 13px 129px;
+    margin-left:-8%;
+}
+
+.ddplogo-statis {
+    height: 382px;
+    width: 440px;
+    margin-top: 25px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 15px;
+    justify-items: center; 
+    margin-left: 25%;
+    margin-top: -12%;
+
+}
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 15px;
+    justify-items: center; 
+    margin-left: -5%;
+    margin-top:5% ;
+
+}
+
+
+
+.box2 {
+    background-color: #1e7a8c;
+    width: 228px;
+    height: 250px;
+    border-radius: 15px;
+    margin-top: 31px;
+    text-align: center;
+    margin-left: 60%;
+    margin-top: -55%;
+}
+
+.box2 img {
+    margin-top: 13%;
+    width: 40px;
+}
+
+.land-desc {
+    padding: 0%;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+}
+
+.box2{
+   color:#00b39b;
+   font-size: 25px;
+   text-align:center;
+   margin-left:60%;
+
+}
+.rd-title {
+    font-size: 30px;
+    color:#00b39b;
+}
+
+.box2-neighb {
+    margin-left: 60%;
+    margin-top: -10%;
+}
+
+
+
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    margin: 0% 13% 9%;
+}
+
+.wrapper {
+    width: 309px;
+    height: 345px;
+    border-radius: 5px;
+    overflow: :hidden;
+}
+
+.wrapper img {
+    width: 309px;
+    height: 278px;
+    transition: box-shadow 0.5s ease; 
+    border-radius: 15px;
+
+}
+
+.wrapper:hover img {
+    box-shadow: 7px 7px 7px rgba(36, 36, 36, 0.5); 
+    
+}
+
+.city-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 5%;
+}
+
+.seemore-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-left: 29%;
+    background: #3d83df;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 0.75rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.seemore-btn:hover {
+    background-color: #6ac5e0; 
+}
+
+
+.image-section a {
+    text-decoration: none;
+    color: #747474;
+
+}
+
+
+.join-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.join-us-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: -400px;
+    text-align: center;
+}
+
+.join-us-btn {
+    border: 0;
+    border-radius: 4px;
+    padding: 20px 100px;
+    margin-top: 130px;
+    margin-left: -500px;
+    background: #3d83df;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.join-us-btn:hover {
+    background-color: #6ac5e0;
+}
+
+
+footer {
+    height: 75px;
+    width: 100%;
+    border-top: 1px solid grey;
+    font-size: .75em;
+    color: #ababab;
+    text-align: center;
+    line-height: 2.2;
+}
+
+footer a {
+    color: #3d83df;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     .hero-section {
         padding: 20px;
@@ -269,3 +491,4 @@ body {
         margin: 10px 0;
     }
 }
+
