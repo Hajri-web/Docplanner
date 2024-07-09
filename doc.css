@@ -129,7 +129,7 @@ body {
 .box {
     width: 300px;
     padding: 20px;
-    background-color: #2d9eab;
+    background-color: #19a28e;
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 0 10px;
@@ -141,6 +141,17 @@ body {
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
+
+#patients-box{
+        background-color: #19a28e;
+    }
+#doctors-box{
+    background-color: #3d83df;
+}
+#clinics-box{
+    background-color:#0a1f3a ;
+}
+
 
 
 .title-container {
@@ -259,7 +270,7 @@ body {
 .statis-desc {
     text-align:start;
     color: #1e7a8c;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 400;
     padding: 13px 129px;
     margin-left:-8%;
@@ -281,56 +292,86 @@ body {
 
 }
 .container3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 15px;
-    justify-items: center; 
-    margin-left: -5%;
-    margin-top:5% ;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-
-
 .box2 {
-    background-color: #1e7a8c;
-    width: 228px;
-    height: 250px;
-    border-radius: 15px;
-    margin-top: 31px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 350px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
     text-align: center;
-    margin-left: 60%;
-    margin-top: -55%;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.box2:hover {
+    transform: translateY(-5px);
 }
 
 .box2 img {
-    margin-top: 13%;
-    width: 40px;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+}
+
+.rd-title {
+    font-size: 24px;
+    color: #00b39b;
+    margin-bottom: 10px;
 }
 
 .land-desc {
-    padding: 0%;
-    font-size: 11px;
-    color: rgb(255, 255, 255);
+    font-size: 16px;
+    color: #747474;
+    line-height: 1.5;
+}
+.slogan-title{
+    font-size: 24px;
+    color: #00b39b;
+    margin-bottom: 10px;
 }
 
-.box2{
-   color:#00b39b;
-   font-size: 25px;
-   text-align:center;
-   margin-left:60%;
-
-}
-.rd-title {
-    font-size: 30px;
-    color:#00b39b;
-}
-
-.box2-neighb {
-    margin-left: 60%;
-    margin-top: -10%;
-}
-
+details {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #2d9eab;
+    background-color: hsl(0, 0%, 96%);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #1e7a8c;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  option {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #1e7a8c;
+  }
+  
 
 
 .image-section {
@@ -344,7 +385,7 @@ body {
     width: 309px;
     height: 345px;
     border-radius: 5px;
-    overflow: :hidden;
+    overflow: hidden;
 }
 
 .wrapper img {
