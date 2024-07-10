@@ -241,15 +241,12 @@ body {
         text-decoration: none;
 }
 
-.photo-box {
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 10px;
-}
 
-.photo-box img {
-    max-width: 100%;
-    object-fit: cover;
+.photo-box > img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+   max-width: 100%;
 }
 
 .titre {
@@ -362,7 +359,6 @@ body {
     margin-bottom: 10px;
 }
 .slogan-text{
-    background-color: ;
     font-size: 30px;
     color: rgb(84, 89, 59);
     line-height: 1.5;
