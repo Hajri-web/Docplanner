@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color:rgb(84, 89, 59);
+    width: 100vw;
+    height: 100vh;
+   background-color:rgb(252, 241, 147);
+   margin: 0;
+}
+
+.main-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 72px;
+    background-color: rgb(217, 206, 106);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    right: 200px;
+}
+
+.nav-link {
+    color: #747474;
+    text-decoration: none;
+    margin-left: -10%;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.nav-link:hover {
+    color: #00b39b;
+}
+
+.docp-logo {
+    width: 268px;
+    height: 33px;
+    transform: scale(0.09);
+    margin-top:-25px ;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffffb8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #747474;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    color: #00b39b;
+    background-color: #f5f5f5;
+}
+
+
+.career{
+    color: #00b39b;
+    font-size: 18px; 
+    text-decoration: none;
+    margin-left: 15%;
+}
+    .about{
+        color: #747474;
+        font-size: 18px; 
+        text-decoration: none;
+}
