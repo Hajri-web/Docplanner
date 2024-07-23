@@ -78,22 +78,33 @@
     }
     
     .hero {
-        background-image: url('\Assets\bg2.jpg');
-        background-size: cover;
-        background-position: center;
+        position: relative;
         height: 500px;
+        margin-top: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 70px;
+        overflow: hidden;
+    }
+    .hero-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
     }
     
+    
     .hero-content {
+        position: absolute;
         background-color: white;
         padding: 30px;
         border-radius: 5px;
         text-align: center;
         max-width: 600px;
+        z-index: 1;
     }
     
     .hero-content h1 {
